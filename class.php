@@ -12,15 +12,17 @@ class FileManager{
  protected $file_name;
  protected $file_tmp;
 
-
+//size
  function setMaxSize($sizeMB){
    return $this->maxSize = $sizeMB * (1024 * 1024);
  }
 
+//check extension
  function setExtension($option){
   return $this->extension = $option;
  }
 
+//path
 function setDir($path){
    return $this->destination = $path;
 }
