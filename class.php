@@ -1,6 +1,6 @@
 <?php
 
-// testing code 
+// testing code below
 echo "load_test";
 // tesing code above
 class FileUpload{
