@@ -8,7 +8,7 @@
    <body>
     <div class="container">
       <form action="index.php" method="POST" enctype="multipart/form-data">
-         <input type="file" name="file" />
+         <input type="file" name="file" multiple="multiple" />
          <input type="submit" class="button"/>
       </form>
       </div>

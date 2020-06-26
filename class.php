@@ -23,8 +23,6 @@ class FileManager{
          $errors[]="please choose a valid file";
       }
 
-
-      
           if($file_size > 500000) {
          $errors[]='File size must be excately 2 MB';
               $Upload_True = 0;
