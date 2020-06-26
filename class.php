@@ -1,4 +1,5 @@
 <?php
+// testing code
 echo "load_test";
 class FileUpload{
 	function Upload(){
