@@ -16,5 +16,5 @@
    </body>
 </html> 
 <?php 
-
+$Uplaod = new FileUpload;
 ?>
