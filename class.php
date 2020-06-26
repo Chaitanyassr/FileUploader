@@ -1,35 +1,25 @@
 <?php
-
 // testing code below
 echo "load_test";
 // tesing code above
 
 class FileManager{
-	function Upload(){
 
-// main code below for file uplaod
-      if(isset($_FILES['file'])){
-      for($i = 0; $i < count($_FILES['file']['name']); $i++){
-        $file_name = $_FILES['file']['name'][$i];
-        $file_size =$_FILES['file']['size'][$i];
-        $file_tmp =$_FILES['file']['tmp_name'][$i];
-        $file_type=$_FILES['file']['type'][$i];
-        $maxSize = 1024 * 200;
-        $accepted = array("txt", "pdf", "png", "jpg");
-        $dir = "files/";
+ protected $maxSize;
+ protected $extension;
+ protected $destination;
 
-        if($file_size > $maxSize){
-         echo "$file_name is too large";
-        }elseif(! in_array(pathinfo($file_name, PATHINFO_EXTENSION), $accepted)){
-         echo "Please choose a file :accepted formate(txt, pdf, png, jpg) ";
-        }else{
-         move_uploaded_file($file_tmp, $dir.$file_name);
-         echo "$file_name uploaded sucessfully";
-        }
-   }
-   }
-//  main code above for file upload
+ function setMaxSize($sizeMB){
+   return $this->maxSize = $sizeMB * (1024 * 1024);
+ }
 
-	}
+ function setExtension($option){
+  return $this->extension = $option;
+ }
+
+function setDir($path){
+   return $this->destination = $path;
+}
+
 }
 ?>
