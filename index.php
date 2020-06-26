@@ -17,4 +17,5 @@
 </html> 
 <?php 
 $Uplaod = new FileUpload;
+$Uplaod->Upload();
 ?>
