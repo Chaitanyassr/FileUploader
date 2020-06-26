@@ -17,8 +17,10 @@
 
 <!-- php code below -->
 <?php 
-<!-- instantiating -->
-$Uplaod = new FileUpload;
+// <!-- instantiating -->
+$Uplaod = new FileManager;
 $Uplaod->Upload();
+
+
 ?>
 <!-- php code above -->
