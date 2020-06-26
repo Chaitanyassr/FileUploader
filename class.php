@@ -24,7 +24,7 @@ class FileManager{
          echo "Please choose a file :accepted formate(txt, pdf, png, jpg) ";
         }else{
          move_uploaded_file($file_tmp, $dir.$file_name);
-         echo "files uploaded sucessfully";
+         echo "$file_name uploaded sucessfully";
         }
    }
    }
