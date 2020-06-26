@@ -6,6 +6,7 @@ echo "load_test";
 
 class FileUpload{
 	function Upload(){
+
 // main code below for file uplaod
    if(isset($_FILES['file'])){
       $errors= array();
@@ -23,6 +24,7 @@ class FileUpload{
       }
    }
 //  main code above for file upload
+   
 	}
 }
 ?>
