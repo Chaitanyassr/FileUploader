@@ -14,6 +14,7 @@
       </div>
    </body>
 </html> 
+
 <!-- php code below -->
 <?php 
 $Uplaod = new FileUpload;
