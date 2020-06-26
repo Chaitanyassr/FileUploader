@@ -8,16 +8,10 @@
       $file_tmp =$_FILES['file']['tmp_name'];
       $file_type=$_FILES['file']['type'];
       $Upload_True = 1;
-      $Target_File= array("jpeg","jpg","png");
-      
-      if(in_array($file_ext,$Target_File)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      }
-      
       
       if(empty($errors)==true){
          move_uploaded_file($file_tmp,"files/".$file_name);
-         echo "Success";
+         echo "File Got Submited";
       }else{
          print_r($errors);
       }
