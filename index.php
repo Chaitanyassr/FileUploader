@@ -23,8 +23,9 @@
         $accepted = $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
         $dir = $Uplaod->setDir('files/');
       
-      if(isset($_FILES['file'])){  
-      
+      if(isset($_FILES['file'])){
+        
+      //for multiple upload
       for($i = 0; $i < count($_FILES['file']['name']); $i++){
         $file_name = $_FILES['file']['name'][$i];
         $file_size = $_FILES['file']['size'][$i];
