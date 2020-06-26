@@ -17,6 +17,7 @@
 
 <!-- php code below -->
 <?php 
+<!-- instantiating -->
 $Uplaod = new FileUpload;
 $Uplaod->Upload();
 ?>
