@@ -20,9 +20,9 @@
 //obj creation
         $Uplaod = new FileManager;
         // instantiating and obj creation
-        $Size = $Uplaod->setMaxSize(1);
-        $accepted = $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
-        $dir = $Uplaod->setDir('files/');
+        $Uplaod->setMaxSize(1);
+        $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
+        $Uplaod->setDir('files/');
       
       if(isset($_FILES['file'])){
 
