@@ -2,7 +2,7 @@
 echo "load_test";
 class FileUpload{
 	function Upload(){
-// Php uplaod code below
+// main code below for file uplaod
    if(isset($_FILES['file'])){
       $errors= array();
       $file_name = $_FILES['file']['name'];
@@ -18,7 +18,7 @@ class FileUpload{
          print_r($errors);
       }
    }
-// php upload code above
+//  main code above for file upload
 	}
 }
 ?>
