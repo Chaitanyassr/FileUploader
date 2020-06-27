@@ -24,9 +24,11 @@
         $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
         $Uplaod->setDir('files/');
         //for checking the image size 20px by 20px
-        $Uplaod->getImageExtension(array("png", "jpg"));
+        $Uplaod->extimg(array("png", "jpg"));
       
       if(isset($_FILES['file'])){
+
+ 
 
       //for multiple upload
       for($i = 0; $i < count($_FILES['file']['name']); $i++){
@@ -37,7 +39,9 @@
 
        $Uplaod->action($file_size, $file_name, $file_tmp);
 
-       $Upload->checkImageFrameSize($file_name);
+
+
+
    }
        }
 ?>
