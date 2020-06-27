@@ -31,7 +31,7 @@ function setDir($path){
    return $this->destination = $path;
 }
 
-//image extension
+//image extension only
 function extimg($img){
    return $this->imgext = $img;
 }
@@ -47,7 +47,7 @@ function action($size, $name, $tmp){
          echo "Please choose a file :accepted formate(txt, pdf, png, jpg)";
         }elseif( in_array(pathinfo($this->file_name, PATHINFO_EXTENSION), $this->imgext)){
                  $result = getimagesize($this->file_tmp);
-                 if($result[0] > 200 && $result[1] > 200){echo "Please upload a smaller file with height and width both should be less than 200";}
+                 if($result[0] > 200 && $result[1] > 200){echo "Please upload a smaller image with height and width both should be less than 200";}
                  else{ 
 move_uploaded_file($this->file_tmp, $this->destination.$this->file_name);
          echo "$this->file_name uploaded sucessfully";

@@ -23,7 +23,7 @@
         $Uplaod->setMaxSize(1);
         $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
         $Uplaod->setDir('files/');
-        //for checking the image size 20px by 20px
+        //for checking the image size 20px by 20px : Plese put image extension only
         $Uplaod->extimg(array("png", "jpg"));
       
       if(isset($_FILES['file'])){
