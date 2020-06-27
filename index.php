@@ -23,6 +23,8 @@
         $Uplaod->setMaxSize(1);
         $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
         $Uplaod->setDir('files/');
+        //for checking the image size 20px by 20px
+        $Uplaod->getImageExtension(array("png", "jpg"));
       
       if(isset($_FILES['file'])){
 
@@ -34,6 +36,8 @@
         $file_type= $_FILES['file']['type'][$i];
 
        $Uplaod->action($file_size, $file_name, $file_tmp);
+
+       $Upload->checkImageFrameSize($file_name);
    }
        }
 ?>

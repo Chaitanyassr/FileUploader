@@ -11,6 +11,7 @@ class FileManager{
  protected $file_size;
  protected $file_name;
  protected $file_tmp;
+ protected $imgExtension;
 
 //size
  function setMaxSize($sizeMB){
@@ -25,6 +26,18 @@ class FileManager{
 //path
 function setDir($path){
    return $this->destination = $path;
+}
+
+function getImageExtension($imgExt){
+   return $this->imgExtension = $imgExt;
+}
+
+function checkImageFrameSize($name){
+   $this->file_name = $name;
+      if(in_array(pathinfo($this->file_name, PATHINFO_EXTENSION), $this->imgExtension)){
+                       list($width, $height) = getimagesize($this->file_name);
+                     echo "$width , $height";
+      }
 }
 
 function action($size, $name, $tmp){
