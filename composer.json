@@ -1,0 +1,24 @@
+{
+    "name": "Chinuon/FileUploader",
+    "type": "library",
+    "description": "Logging for PHP 5.3",
+    "keywords": ["log","logging"],
+    "homepage": "https://github.com/Chaitanyassr/FileUploader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kumar Chaitanya",
+            "email": "chaitanyas0101@gmail.com",
+            "homepage": "https://chaitanyassr.netlify.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Monolog": "src"
+        }
+    }
+}
