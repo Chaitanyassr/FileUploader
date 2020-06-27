@@ -22,7 +22,8 @@
         // instantiating and obj creation
         $Uplaod->setMaxSize(1);
         $Uplaod->setExtension(array("txt", "pdf", "png", "jpg"));
-        $Uplaod->setDir('files/');
+        $Uplaod->setDir(tempnam('files/', 'upload0'));
+        
         //for checking the image size 20px by 20px : Plese put image extension only
         $Uplaod->extimg(array("png", "jpg"));
       
